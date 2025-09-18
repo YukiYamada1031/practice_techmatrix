@@ -4,3 +4,300 @@
   padding: 0px;
   margin: 0px;
 }
+
+html{
+  max-width: 100%;
+}
+
+body{
+  max-width: 100%;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+li{
+  list-style: none;
+}
+
+img{
+  max-width: 100%;
+}
+
+.container{
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.wrapper{
+  width: 1200px;
+  text-align: left;
+  margin: 0 auto;
+}
+
+#header{
+  padding: 10px 80px;
+  position: fixed;
+  z-index: 10;
+  background-color: #f9f5f1;
+  width: 100%;
+  top: 0;
+}
+
+.flex-header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.site-title{
+  width: 240px;
+}
+
+.site-title:hover{
+  opacity: 0.7;
+}
+
+.site-title:active{
+  opacity: 0.5;
+}
+
+.nav1{
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.nav2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav1 li,
+.nav2 li{
+  margin-left: 40px;
+  font-weight: 700;
+}
+
+.nav1 li:hover,
+.nav2 li:hover{
+  opacity: 0.7;
+}
+
+.nav1 li:active,
+.nav2 li:active{
+  opacity: 0.5;
+}
+
+#mainvisual{
+  margin-bottom: 80px;
+}
+
+#mainvisual img{
+  margin-bottom: 40px;
+  width: 100%;
+  opacity: 0.9;
+  position: relative;
+}
+
+#mainvisual .main-text{
+  position: absolute;
+  top: 240px;
+  left: 60px;
+  color: aliceblue;
+  z-index: 9;
+}
+
+.main-text h1{
+  margin-bottom: 40px;
+  font-size: 4ic;
+  opacity: 0.8;
+}
+
+.main-text h2{
+  line-height: 2;
+  font-size: 2ic;
+  opacity: 0.8;
+}
+
+#column .section-title{
+  margin-bottom: 60px;
+  font-size: xx-large;
+  text-align: center;
+}
+
+.flex-column{
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin-bottom: 120px;
+}
+
+.left-column{
+  width: 26%;
+  padding-right: 4%;
+  border-top: solid 5px #f4db38;
+  padding-top: 60px;
+}
+
+.left-column h3{
+  font-size: x-large;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.left-column a::before{
+  content: "＜";
+  color: #eed00b;
+}
+
+.left-column .column-image{
+  margin-top: 30px;
+  width: 280px;
+  height: 180px;
+  object-fit: cover;
+  clip-path: polygon(40% 0%, 100% 0, 100% 100%, 0% 100%);
+  opacity: 0.8;
+}
+
+.right-column{
+  width: 70%;
+  border-top: solid 5px #ded5c7;
+  padding-top: 20px;
+}
+
+.right-column .item {
+  padding: 20px;
+  margin-bottom: 20px;
+  border-bottom: solid 1px #ded5c7;
+}
+
+.right-column .flex-item{
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.flex-item p{
+  margin-right: 20px;
+  color: #9d9b9b;
+}
+
+.flex-item .type{
+  padding: 3px;
+  border: solid 1px #9d9b9b;
+}
+
+.left-column .column-image2{
+  margin-top: 30px;
+  width: 280px;
+  height: 180px;
+  object-fit: cover;
+  clip-path: polygon(0% 0%, 60% 0, 100% 100%, 0% 100%);
+  opacity: 0.8;
+}
+
+#app{
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin-bottom: 80px;
+  background-color: #f9f5f1;;
+  text-align: center;
+}
+
+#app .section-title{
+  margin-bottom: 30px;
+}
+
+#app p{
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+#app .toiawase{
+  width: 300px;
+  margin: 0 auto;
+  padding: 20px ;
+  background-color: #f5dc38;
+  font-weight: 700;
+}
+
+#app .toiawase::after{
+  content: "　＞";
+}
+
+#app .toiawase:hover{
+  opacity: 0.7;
+}
+
+#app .toiawase:active{
+  opacity: 0.5;
+}
+
+.flex-footer1{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 60px;
+}
+
+#footer .footer-1,
+#footer .content{
+  margin-bottom: 40px;
+  padding-bottom: 20px;
+  border-bottom: solid 1px #ded5c7;
+  font-weight: 700;
+  width: 200px;
+}
+
+#footer li{
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+#footer .flex-footer2{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.flex-footer3,
+.flex-footer4{
+  display: flex;
+  align-items: center;
+}
+
+.flex-footer3 p,
+.flex-footer4 p{
+  margin-right: 80px;
+  font-size: small;
+}
+
+.flex-footer3 p:first-child{
+  margin-right: 170px;
+}
+
+.flex-footer3{
+  margin-bottom: 30px;
+}
+
+.flex-footer4{
+  margin-bottom: 150px;
+}
+
+#footer .copy{
+  text-align: center;
+  font-size: x-small;
+  margin-bottom: 10px;
+}
+
+.footer-img{
+  text-align: right;
+}
